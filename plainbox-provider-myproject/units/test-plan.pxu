@@ -1,0 +1,18 @@
+unit: test plan
+id: my-project-custom-1
+_name: MyProject tests
+_description:
+    This test plan includes all test related to MyProject
+include:
+    my-first-job
+
+unit: test plan
+id: my-project-all-tests-1
+_name: All MyProject tests
+_description:
+    This test plan includes some disk tests from plainbox-provider-snappy
+    and the my-first-job test.
+include:
+    com.canonical.certification::disk/detect
+    com.canonical.certification::disk/stats_.*
+    my-first-job

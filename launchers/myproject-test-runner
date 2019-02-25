@@ -1,0 +1,8 @@
+#!/usr/bin/env checkbox-cli-wrapper
+[launcher]
+app_id = com.canonical.qa.myproject:checkbox
+launcher_version = 1
+stock_reports = text, submission_files
+
+[test plan]
+filter = *myproject*, *tpm-smoke-tests
