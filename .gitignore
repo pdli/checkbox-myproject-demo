@@ -1,3 +1,5 @@
 snap/parts
 snap/prime
 snap/stage
+snap/snap
+snap/*.snap

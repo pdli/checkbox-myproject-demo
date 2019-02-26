@@ -59,11 +59,6 @@ parts:
     source-tag: ""
     source-type: "git"
     source: "https://git.launchpad.net/fwts"
-  stress-ng:
-    source-tag: ""
-    source-type: "git"
-    source: "https://git.launchpad.net/stress-ng"
-    after: [plainbox-provider-checkbox]
   checkbox-support-dev:
     source-tag: ""
     source: "https://git.launchpad.net/checkbox-support"
