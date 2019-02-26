@@ -42,7 +42,7 @@ The project will demo how to customize test plan and launcher of the Checkbox.
   - slave node: >> checkbox-cli slave
   - master node: >> checkbox-cli master HOST [/Path/To/Launcher]
 ```
-3. Create a new Provider
+3. Create a new Provider - [tutorials](https://checkbox.readthedocs.io/en/latest/tutorials.html)
 ```
 - Step-1 Create an empty provider
   >> checkbox-cli startprovider --empty <com.canonical.qa.myproject>:<plainbox-provider-myproject>
@@ -63,7 +63,7 @@ The project will demo how to customize test plan and launcher of the Checkbox.
   == Installed provider will be overwriten, if it is located here: 
   >> /var/tmp/checkbox-proviers/
 ```
-4. Create a new Launcher/App(For snappy Ubuntu Core)
+4. Create a new Launcher/App - [For Snappy Ubuntu Core testing](https://checkbox.readthedocs.io/en/latest/custom-app.html)
 ```
 - Step-1 Initialize
   >> snapcraft init
