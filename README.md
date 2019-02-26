@@ -18,7 +18,7 @@ The project will demo how to customize test plan and launcher of the Checkbox.
   2) Jobs - (commands, categorized)
   3) Run CMD: >> ./manage.py install
 ```
-2. Commands to run checkbox-cli
+2. Checkbox Command Line - [checkbox-cli](https://checkbox.readthedocs.io/en/latest/using.html#checkbox-command-line)
 ```
 - Run interactive session: 
   >> checkbox-cli
