@@ -69,21 +69,21 @@ The project will demo how to customize test plan and launcher of the Checkbox.
   >> snapcraft init
   >> git init
  
-- Step-1 Create a new Provider
+- Step-2 Create a new Provider
 
-- Step-2 Create a new Launcher
+- Step-3 Create a new Launcher
   >> mkdir launchers
   >> touch launchers/<myproject>-test-runner
   >> touch launchers/checkbox-cli-wrapper
   >> chmod +x launchers/*
  
- - Step-3 Declard the launcher in your Snap
+ - Step-4 Declard the launcher in your Snap
   >> vim snap/snapcraft.yaml
  
- - Step-4 Snap it
+ - Step-5 Snap it
   >> snapcraft
  
- - Step-5 Run new App
+ - Step-6 Run new App
   >> snap install <new-snap> --devmode
 ```
 
