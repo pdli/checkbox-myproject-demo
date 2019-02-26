@@ -6,14 +6,20 @@ Checkbox is a system testing platform for Ubuntu. It aims to provide a common fr
 The project tries to build a demo about how to customize test plan and launcher of the Checkbox
 
 
-##### Commands:
-
-- Build checkbox snap >> snapcraft
-- Install checkbox snap >> snap install <snappy_name> --devmode
-- Launch checkbox >> launcher_name
+##### User Guide:
+1. Customize test plan in a new Provider
+```
+Build checkbox snap >> snapcraft
+Install checkbox snap >> snap install <snappy_name> --devmode
+Launch checkbox >> launcher_name
+```
+2. Customize an app with new Launcher
+```
+xxx
+```
 
 
 ##### Reference Links:
-- > [CheckBox User Guide](https://checkbox.readthedocs.io/en/latest/using.html#getting-started)
-- > [Customize Provider]()
-- > [Customize Launcher](https://checkbox.readthedocs.io/en/latest/custom-app.html)
+- [CheckBox User Guide](https://checkbox.readthedocs.io/en/latest/using.html#getting-started)
+- [Customize Provider]()
+- [Customize Launcher](https://checkbox.readthedocs.io/en/latest/custom-app.html)
