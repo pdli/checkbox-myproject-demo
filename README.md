@@ -6,7 +6,7 @@ Checkbox is a system testing platform for Ubuntu. It aims to provide a common fr
 The project will demo how to customize test plan and launcher of the Checkbox.
 
 
-#### User Guide:
+#### Development Guide:
 1. Entities
 ``` 
 - Launcher
