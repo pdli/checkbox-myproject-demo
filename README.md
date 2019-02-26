@@ -58,14 +58,36 @@ The project will demo how to customize test plan and launcher of the Checkbox.
 - Step-4 Running jobs from a newly created provider
   >> ./manage.py <install | develop>
   >> checkbox-cli [run] [test-plan | jobs]
+  
+- (Recommended) Side-loading Providers
+  == Installed provider will be overwriten, if it is located here: 
+  >> /var/tmp/checkbox-proviers/
 ```
-4. Customize an app with new Launcher
+4. Create a new Launcher/App(For snappy Ubuntu Core)
 ```
-Build checkbox snap >> snapcraft
-Install checkbox snap >> snap install <snappy_name> --devmode
-Launch checkbox >> launcher_name
+- Step-1 Initialize
+  >> snapcraft init
+  >> git init
+ 
+- Step-1 Create a new Provider
+
+- Step-2 Create a new Launcher
+  >> mkdir launchers
+  >> touch launchers/<myproject>-test-runner
+  >> touch launchers/checkbox-cli-wrapper
+  >> chmod +x launchers/*
+ 
+ - Step-3 Declard the launcher in your Snap
+  >> vim snap/snapcraft.yaml
+ 
+ - Step-4 Snap it
+  >> snapcraft
+ 
+ - Step-5 Run new App
+  >> snap install <new-snap> --devmode
 ```
 
 #### Reference Links:
-- [CheckBox User Guide](https://checkbox.readthedocs.io/en/latest/using.html#getting-started)
-- [Customize Launcher](https://checkbox.readthedocs.io/en/latest/custom-app.html)
+- [Checkbox User Guide](https://checkbox.readthedocs.io/en/latest/using.html#getting-started)
+- [Checkbox Projects](https://launchpad.net/checkbox-project)
+- [Checkbox Stack](https://checkbox.readthedocs.io/en/latest/stack.html)
