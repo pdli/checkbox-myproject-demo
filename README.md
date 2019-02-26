@@ -7,13 +7,34 @@ The project will demo how to customize test plan and launcher of the Checkbox.
 
 
 #### User Guide:
-1. Customize test plan in a new Provider
+
+1. Commands to run checkbox-cli
+```
+- Run interactive session: 
+  >> checkbox-cli
+  
+- List job/test plan/ category/ file/ template/ all-jobs:
+  >> checkbox-cli run <individual test plan> [--non-interactive] [-o FILE] [-f FORMAT]
+    
+- List jobs of a test plan: 
+  >> checkbox-cli list-bootstrapped <test plan>
+
+- Export a test plan:
+  >> checkbox-cli tp-export <test plan>
+
+- Launch a custom checkbox:
+  >> checkbox-cli <my-launcher>
+  
+- Run job/test plan: 
+  >> checkbox-cli run <test-plan / jobs>
+```
+2. Customize test plan in a new Provider
 ```
 Build checkbox snap >> snapcraft
 Install checkbox snap >> snap install <snappy_name> --devmode
 Launch checkbox >> launcher_name
 ```
-2. Customize an app with new Launcher
+3. Customize an app with new Launcher
 ```
 xxx
 ```
