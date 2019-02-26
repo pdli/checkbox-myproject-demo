@@ -7,8 +7,18 @@ The project will demo how to customize test plan and launcher of the Checkbox.
 
 
 #### User Guide:
-
-1. Commands to run checkbox-cli
+1. Entities
+``` 
+- Launcher
+  1) Interactive Dashboard
+  2) Run CMD: >> checkbox-cli <my-launcher>
+  
+- Provider
+  1) Test Plan - (listed in Dashboard, calling jobs to be run)
+  2) Jobs - (commands, categorized)
+  3) Run CMD: >> ./manage.py install
+```
+2. Commands to run checkbox-cli
 ```
 - Run interactive session: 
   >> checkbox-cli
@@ -27,16 +37,33 @@ The project will demo how to customize test plan and launcher of the Checkbox.
   
 - Run job/test plan: 
   >> checkbox-cli run <test-plan / jobs>
+  
+- Remotely run checkbox:
+  - slave node: >> checkbox-cli slave
+  - master node: >> checkbox-cli master HOST [/Path/To/Launcher]
 ```
-2. Customize test plan in a new Provider
+3. Create a new Provider
+```
+- Step-1 Create an empty provider
+  >> checkbox-cli startprovider --empty <com.canonical.qa.myproject>:<plainbox-provider-myproject>
+  >> cd <com.canonical.qa.myproject>:<plainbox-provider-myproject>
+  >> mkdir units
+  
+- Step-2(optional) Add jobs
+  >> touch units/jobs.pxu
+  
+- Step-3 Add test plan
+  >> touch units/test-plan.pxu
+  
+- Step-4 Running jobs from a newly created provider
+  >> ./manage.py <install | develop>
+  >> checkbox-cli [run] [test-plan | jobs]
+```
+4. Customize an app with new Launcher
 ```
 Build checkbox snap >> snapcraft
 Install checkbox snap >> snap install <snappy_name> --devmode
 Launch checkbox >> launcher_name
-```
-3. Customize an app with new Launcher
-```
-xxx
 ```
 
 #### Reference Links:
