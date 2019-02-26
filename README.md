@@ -20,5 +20,4 @@ xxx
 
 #### Reference Links:
 - [CheckBox User Guide](https://checkbox.readthedocs.io/en/latest/using.html#getting-started)
-- [Customize Provider]()
 - [Customize Launcher](https://checkbox.readthedocs.io/en/latest/custom-app.html)
